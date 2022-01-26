@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 79, 145);
+}
+#score {
+  display: flex;
+  border: 1px solid white;
+  margin-bottom: 2rem;
+  color: white;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  color: white;
+}
+h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+#playerScore {
+  border-right: 1px solid white;
+}
+#score > * {
+  width: 50%;
+  padding: 1.5rem 2rem;
+}
+#PScount,
+#BScount {
+  display: block;
+  font-size: 1.7rem;
+  text-align: center;
+  width: 100%;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(10, 67, 121);
+  border-radius: 50%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#game {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+#choices {
+  margin-bottom: 2rem;
+}
+#choices * {
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  background-color: rgb(7, 68, 126);
+  border: 1px solid rgb(190, 190, 190);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#choices *:hover {
+  background-color: white;
+  color: rgb(7, 68, 126);
+  cursor: pointer;
+}
+#reset {
+  padding: 0.8rem 2rem;
+  background-color: rgb(9, 60, 107);
+  border: 1px solid rgb(190, 190, 190);
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#reset:hover {
+  background-color: white;
+  color: rgb(9, 60, 107);
+  cursor: pointer;
+}
